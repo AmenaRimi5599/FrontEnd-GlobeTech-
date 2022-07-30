@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  const [planePosition, setPlanePosition] = useState("left");
   return (
     <body className="background-color">
       <Container className="homecontainer">
@@ -41,12 +42,34 @@ const Home = () => {
         <br />
         <Row>
           <Col xs={12} md={6}>
-            <div id="planelogo">
-              <img src="planeline.png" alt="" id="line1" />
-              <img src="planeline.png" alt="" id="line2" />
-              <img src="planeline.png" alt="" id="line3" />{" "}
-              <img src="plane.png" alt="" id="plane" width="80px" />
-            </div>
+            <table>
+              <tr>
+                <td>
+                  {planePosition === "left" && (
+                    <div
+                      id="planelogo"
+                      onMouseEnter={() => {
+                        setPlanePosition("right");
+                      }}
+                    >
+                      <img src="wholeplane.png" alt="" id="plane" />
+                    </div>
+                  )}
+                </td>
+                <td>
+                  {planePosition === "right" && (
+                    <div
+                      id="planelogo2"
+                      onMouseEnter={() => {
+                        setPlanePosition("left");
+                      }}
+                    >
+                      <img src="wholeplane.png" alt="" id="plane" />
+                    </div>
+                  )}
+                </td>
+              </tr>
+            </table>
             <div className="headbar">
               <h1>
                 Welcome to<span className="globe"> Globetech</span>

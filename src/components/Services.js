@@ -74,6 +74,15 @@ function Services() {
           </Col>
         </Row>
       </Container>
+      <Container>
+        <Row>
+          <Col>
+            <div id="planelogo3">
+              <img src="wholeplane.png" alt="" id="plane" />
+            </div>
+          </Col>
+        </Row>
+      </Container>
       <div className="header" align="center">
         <div className="sidebarcontent">
           <label>SERVICES</label>

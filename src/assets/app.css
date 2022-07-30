@@ -21,34 +21,68 @@
   background: url("../../public/group.png");
   background-repeat: no-repeat;
   background-size: 500px;
+  transition: transform 200s;
 }
 
-#line1 {
+#solar:hover {
+  position: relative;
+  left: 160px;
+  height: 600px;
+  background: url("../../public/group2.png");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  transition: transform 200ms;
+  transform: rotate(0, 0, 0, 180deg);
+}
+
+/* #line1 {
   margin-top: -15px;
   height: 3px;
   width: 80px;
-  transition-duration: 6s;
-  transition-property: background-color;
 }
 #line2 {
   height: 3px;
   width: 80px;
   margin-left: -80px;
-  transition-duration: 6s;
-  transition-property: background-color;
 }
 #line3 {
   margin-top: 15px;
   height: 3px;
   width: 80px;
   margin-left: -80px;
-  transition-duration: 6s;
-  transition-property: background-color;
+} */
+
+#planelogo {
+  transition: transform 2s;
 }
 #planelogo:hover {
-  position: relative;
-  left: 320px;
+  /* transition: transform 50ms; */
+  transform: translateX(320px);
 }
+
+/* #planelogo2 {
+  position: relative;
+  left: 360px;
+  transition: transform 1000s;
+} */
+
+#planelogo2:hover {
+  visibility: visible;
+  transform: translateX(320px);
+}
+
+.headbar {
+  width: 500px;
+}
+
+#planelogo3 {
+  transition: transform 2s;
+}
+#planelogo3:hover {
+  /* transition: transform 50ms; */
+  transform: translateX(900px);
+}
+
 .headbar h1 {
   color: #28ace2;
 
@@ -62,9 +96,11 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
   padding-bottom: 30px;
   color: #2ebbe5;
+  display: inline-block;
+  text-align: justify;
 }
 a.support {
   background-color: #def77d;
@@ -74,6 +110,7 @@ a.support {
   font-weight: 700;
   font-family: "Poppins";
   font-size: 17px;
+  border-radius: 2px;
 }
 a.mission {
   color: #8fe5ff;
@@ -84,7 +121,9 @@ a.mission {
   font-family: "Poppins";
   font-size: 17px;
   font-weight: 700;
+  border-radius: 2px;
 }
+
 span.itservice {
   font-family: "Poppins";
   color: #9eb540;
