@@ -24,7 +24,7 @@ function Login() {
             <span>Welcome</span>
             <br />
             <br />
-            <p>Sign in to your account</p>
+            <label>Sign in to your account</label>
 
             <input
               type="text"
